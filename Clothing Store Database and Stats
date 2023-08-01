@@ -1,0 +1,25 @@
+--Create a clothing store database
+
+CREATE TABLE Store (id INTEGER PRIMARY KEY, Clothing TEXT, Color TEXT, Quantity INTEGER, Price INTEGER);
+
+INSERT INTO Store VALUES (1,"Jeans", "Dark Blue", 50, 15);
+INSERT INTO Store VALUES (2, "Jean Shorts", "Light Blue", 50, 12);
+INSERT INTO Store VALUES (3, "Leggings", "Black", 25, 6);
+INSERT INTO Store VALUES (4, "Mini Skirts", "Dark Red", 25, 10);
+INSERT INTO Store VALUES (5, "Long Skirts", "Dark Green", 25, 12);
+INSERT INTO Store VALUES (6, "Dress Pants", "Black", 35, 17);
+INSERT INTO Store VALUES (7, "Short Sleeve Shirt", "Cream", 50, 10);
+INSERT INTO Store VALUES (8, "long Sleeve Shirt", "Grey", 50, 13);
+INSERT INTO Store VALUES (9, "Day Dresses","Patterned",30, 16);
+INSERT INTO Store VALUES (10, "Outfit Sets", "Patterned", 30, 20);
+INSERT INTO Store VALUES (11, "Night Dresses", "Patterned", 30, 16);
+INSERT INTO Store VALUES (12, "Sweaters", "Purple", 30, 18);
+INSERT INTO Store VALUES (13, "Crop Tops", "Tuscan", 25, 6);
+INSERT INTO Store VALUES (14, "Jackets", "Patterned", 50, 30);
+INSERT INTO Store VALUES (15, "Swimsuits", "Patterned", 30, 15);
+
+--Display the database ordered by price.
+SELECT * FROM Store ORDER BY Price;
+
+--What is the sum of the items in the quantity section? 
+SELECT Sum(quantity) FROM Store;
